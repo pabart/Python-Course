@@ -60,3 +60,21 @@ print(fruits)
 print("Reverse functionality - fruits.reverse()")
 fruits.reverse()
 print(fruits)
+
+
+# Lists comprehensions
+# Lists comprehensions are a concise way to create new lists based on an existing sequence. They allow us to
+# filter and transform the elements of a list in a single line of code.
+# new_list = [expression for element in sequence if condition]
+
+print()
+
+numbers = [1,2,3,4,5]
+squares = [x ** 2 for x in numbers]
+print(squares)
+
+print()
+
+numbers = [1,2,3,4,5]
+squares = [x ** 2 for x in numbers if x % 2 == 0]
+print(squares)
